@@ -19,11 +19,8 @@ function getAddresses(simple_html_dom $dom) {
         if($option->value) $vars[$option->value] = $option->innertext;
       
     }
-	
 
 	return $vars;
-
-
 
 }
 
@@ -36,10 +33,13 @@ $resultPage = $browser->doPostRequest($url, array('ctl00$ContentPlaceHolder1$txt
 
 print_r(getAddresses($resultPage));
 
-$resultPage->clear();
 
 $resultPage = $browser->doPostBack($url, 'ctl00$ContentPlaceHolder1$lstAddresses', 'UPRN100011709213'); 
-
 echo $resultPage;
+
+$resultPage = $browser->doGetRequest('https://apps.wigan.gov.uk/MyNeighbourhood/MyArea.aspx'); 
+echo $resultPage;
+
+$resultPage->clear();
 
 
