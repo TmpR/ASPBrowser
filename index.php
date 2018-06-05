@@ -38,7 +38,7 @@ print_r(getAddresses($resultPage));
 
 $resultPage->clear();
 
-$resultPage = $browser->doPostBack($url, array('ctl00$ContentPlaceHolder1$txtPostcode' => $_GET['postcode'], 'ctl00$ContentPlaceHolder1$lstAddresses' => 'UPRN100011709213')); 
+$resultPage = $browser->doPostBack($url, 'ctl00$ContentPlaceHolder1$lstAddresses', 'UPRN100011709213'); 
 
 echo $resultPage;
 

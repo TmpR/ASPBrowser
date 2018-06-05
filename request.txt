@@ -1,0 +1,45 @@
+> GET /MyNeighbourhood/ HTTP/1.1
+Host: apps.wigan.gov.uk
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
+Accept: */*
+Accept-Encoding: gzip,deflate
+
+< HTTP/1.1 200 OK
+< Cache-Control: private
+< Content-Type: text/html; charset=utf-8
+< Content-Encoding: gzip
+< Vary: Accept-Encoding
+< Server: Microsoft-IIS/8.5
+< X-AspNet-Version: 4.0.30319
+< X-Powered-By: ASP.NET
+< Date: Tue, 05 Jun 2018 13:53:43 GMT
+< Content-Length: 5094
+< 
+
+
+-----------------------------------------------------------
+
+> POST /MyNeighbourhood/ HTTP/1.1
+Host: apps.wigan.gov.uk
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-Length: 550
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/1.1 200 OK
+< Cache-Control: private
+< Content-Type: text/html; charset=utf-8
+< Content-Encoding: gzip
+< Vary: Accept-Encoding
+< Server: Microsoft-IIS/8.5
+< Set-Cookie: ASP.NET_SessionId=bsxhxg3t4vsqcave5cpfrplc; path=/; HttpOnly
+< X-AspNet-Version: 4.0.30319
+< X-Powered-By: ASP.NET
+< Date: Tue, 05 Jun 2018 13:53:43 GMT
+< Content-Length: 7569
+< 
+SearchQueryControl_SearchTextBox=Enter%20Keywords&SearchQueryControl_SearchButton=Search&__VIEWSTATE=%2FwEPDwULLTE2NTIzMzkyNTUPZBYCZg9kFgICAw9kFgICAQ9kFgQCBA8PFgIeBFRleHRlZGQCBg8PFgIeB1Zpc2libGVoZBYCAgEPZBYCAgEPEGRkFgBkZMAkZP%2BoEksCCNEm8gn9q9H0QAH%2Be935XIs0kHP6Ajpq&__VIEWSTATEGENERATOR=F01E8114&__EVENTVALIDATION=%2FwEdAAMUzunLminT%2FbfA0%2FDsSKOMsaxNGBd52upyJ6GXbuouAI7zohCMBqNjam79gmP24YLORJpkkkqdE918XBoW8zz81VvFqbokN%2BdA3iop%2B5SXEA%3D%3D&ctl00%24ContentPlaceHolder1%24txtPostcode=wn72tw&ctl00%24ContentPlaceHolder1%24btnPostcodeSearch=Search
+
+-----------------------------------------------------------
+
