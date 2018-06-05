@@ -52,7 +52,7 @@ class ASPBrowser {
             $this->dom = false;
         }
         $dom = $this->dom = str_get_html($data);
-
+        $post = str_replace('&',"\n",$post);
         fwrite($f, "{$post}\n\n");
         fwrite($f, "-----------------------------------------------------------\n\n");
         fclose($f);
@@ -94,10 +94,10 @@ class ASPBrowser {
      * @param string $eventArgument
      * @return bool|simple_html_dom
      */
-    function doPostBack($url, $eventTarget, $eventArgument = '') {
+    function doPostBack($url, $eventTarget, $overrideValue) {
         return $this->doPostRequest($url, array(
             '__EVENTTARGET' => $eventTarget,
-            '__EVENTARGUMENT' => $eventArgument
+            $eventTarget => $overrideValue
         ));
     }
 
