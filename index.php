@@ -120,6 +120,8 @@ if(!empty($_GET['postcode'])) {
 	$resultPage->clear();
 }
 
+
+header('Content-Type: application/json');
 echo json_encode($output);
 
 
